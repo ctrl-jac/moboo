@@ -1,0 +1,319 @@
+{
+  "getRestaurant": {
+    "1": {
+      "success": true,
+      "message": "success/error message",
+      "data": [{
+        "currency": "rupees",
+        "hotelName": "Ammu Foods",
+        "hotelId": 1
+      }]
+    }
+  },
+  "getCombos": {
+    "1": {
+      "success": true,
+      "message": "success/error message",
+      "data": [{
+        "comboId": 1,
+        "label": "Burger + Drinks combos",
+        "description": "Burger Drinks Combos",
+        "imageURL": "s3:/var/img/resturants/1/menu/category/comboBug.img",
+        "items": [{
+
+        }]
+      }]
+    }
+  },
+  "getMenu": {
+    "1": {
+      "success": true,
+      "message": "success/error message",
+      "data": [{
+        "category": [{
+          "categoryId": 1,
+          "label": "Burgers",
+          "description": "Variety burgers",
+          "imageURL": "s3:/var/img/resturants/1/menu/category/bug.img",
+          "items": [{
+            "itemId": 1,
+            "label": "Classic Burgers",
+            "imageURL": "s3:/var/img/resturants/1/menu/items/clbug.img",
+            "description": "Our Classic burger with a size of jack cheese, breef tomato, etc..",
+            "type": [
+              "Vegetarian",
+              "Nut Free"
+            ],
+            "services": [
+              "pickup",
+              "delivery",
+              "table_reservation",
+              "order_ahead",
+              "order_for_later"
+            ],
+            "cusines": [
+              "North Indian",
+              "South Indian"
+            ],
+            "specialInstructions": true,
+            "tax": {
+              "category": "CGST",
+              "Note": "TBD"
+            },
+            "ingredients": [
+              "onion",
+              "tomato"
+            ],
+            "size": [{
+              "sizeId": 1,
+              "label": "Burger Only",
+              "description": "Only burger",
+              "price": 50,
+              "preSelected": true,
+              "instock": true,
+              "addOns": [{
+                "groupId": 1,
+                "addOnIds": [1, 3]
+              },
+                {
+                  "groupId": 2,
+                  "addOnIds": [1]
+                }
+              ]
+            },
+              {
+                "sizeId": 2,
+                "label": "King Burger",
+                "description": "Etra large burger",
+                "price": 80,
+                "preSelected": false,
+                "instock": true,
+                "addOns": [{
+                  "groupId": 1,
+                  "addOnIds": [1, 3]
+                },
+                  {
+                    "groupId": 2,
+                    "addOnIds": [1]
+                  }
+                ]
+              }
+            ]
+          },
+            {
+              "itemId": 2,
+              "label": "cheese Burgers",
+              "imageURL": "s3:/var/img/resturants/1/menu/items/chbug.img",
+              "description": "The classic cheeseburger. 100% beef patty, a slice of Jack cheese, diced red onions, pickles, mustard & plenty of ketchup.",
+              "type": [
+                "Vegetarian",
+                "Nut Free",
+                "Hot",
+                "Halal"
+              ],
+              "cusines": [
+                "North Indian",
+                "South Indian"
+              ],
+              "specialInstructions": false,
+              "tax": {
+                "category": "Service Tax",
+                "Note": "TBD"
+              },
+              "services": [
+                "pickup",
+                "delivery",
+                "table_reservation",
+                "order_ahead",
+                "order_for_later"
+              ],
+              "ingredients": [
+                "onion",
+                "tomato"
+              ],
+              "size": [{
+                "sizeId": 1,
+                "label": "Burger Only",
+                "description": "Only burger",
+                "price": 75,
+                "preSelected": true,
+                "instock": true,
+                "addOns": [
+                  1
+                ]
+              }]
+            }
+          ]
+        },
+          {
+            "categoryId": 2,
+            "label": "Salads",
+            "description": "Tasty salads",
+            "imageURL": "s3:/var/img/resturants/1/menu/category/salads.img",
+            "items": [{
+              "itemId": 1,
+              "label": "Greek Salads",
+              "imageURL": "s3:/var/img/resturants/1/menu/items/gsal.img",
+              "description": "The best Greek salad with tomato, sliced cucumber, green pepper, sliced red onion, Kalamata olives and of course feta cheese",
+              "type": [
+                "Vegetarian",
+                "Nut Free",
+                "Raw"
+              ],
+              "cusines": [
+                "North Indian",
+                "South Indian"
+              ],
+              "services": [
+                "pickup",
+                "delivery",
+                "table_reservation",
+                "order_ahead",
+                "order_for_later"
+              ],
+              "specialInstructions": false,
+              "tax": {
+                "category": "CGST",
+                "Note": "TBD"
+              },
+              "ingredients": [
+                "onion",
+                "tomato"
+              ],
+              "size": [{
+                "sizeId": 1,
+                "label": "Standard",
+                "description": null,
+                "price": 30,
+                "preSelected": true,
+                "instock": true,
+                "addOns": [{
+                  "groupId": 1,
+                  "addOnIds": [1, 3]
+                },
+                  {
+                    "groupId": 2,
+                    "addOnIds": [1]
+                  }
+                ]
+              }]
+            },
+              {
+                "itemId": 2,
+                "label": "Broccoli Apple Salad",
+                "imageURL": "s3:/var/img/resturants/1/menu/items/apsal.img",
+                "description": "Amazing mix of broccoli, carrots, red onion, apples, pecans, and dried cranberries",
+                "type": [
+                  "Vegetarian",
+                  "Nut Free",
+                  "Hot",
+                  "Halal",
+                  "Dairy Free"
+                ],
+                "cusines": [
+                  "North Indian",
+                  "South Indian"
+                ],
+                "services": [
+                  "pickup",
+                  "delivery",
+                  "table_reservation",
+                  "order_ahead",
+                  "order_for_later"
+                ],
+                "specialInstructions": false,
+                "tax": {
+                  "category": "Service Tax",
+                  "Note": "TBD"
+                },
+                "ingredients": [
+                  "onion",
+                  "tomato"
+                ],
+                "size": [{
+                  "sizeId": 1,
+                  "label": "Burger Only",
+                  "description": null,
+                  "price": 75,
+                  "preSelected": false,
+                  "instock": true,
+                  "addOns": [{
+                    "groupId": 1,
+                    "addOnIds": [1, 3]
+                  },
+                    {
+                      "groupId": 2,
+                      "addOnIds": [1]
+                    }
+                  ]
+                }]
+              }
+            ]
+          }
+        ]
+      }]
+    }
+  },
+  "getAddOns": {
+    "1": {
+      "success": true,
+      "message": "success/error message",
+      "data": [{
+        "groupId": 1,
+        "label": "Customize Your Burger",
+        "addOnSelection": {
+          "madatory": true,
+          "min": 1,
+          "max": 3
+        },
+        "tax": {
+          "category": "CGST",
+          "Note": "TBD"
+        },
+        "instock": true,
+        "addOns": [{
+          "addOnId": 1,
+          "label": "Red Onion",
+          "price": 0.5,
+          "preSelected": true
+        },
+          {
+            "addOnId": 2,
+            "label": "Mixed Pepper",
+            "price": 0.5,
+            "preSelected": true
+          }
+        ]
+      },
+        {
+          "groupId": 2,
+          "label": "Select a Side",
+          "addOnSelection": {
+            "madatory": false,
+            "min": 0,
+            "max": 3
+          },
+          "tax": {
+            "category": "CGST",
+            "Note": "TBD"
+          },
+          "instock": true,
+          "addOns": [{
+            "addOnId": 1,
+            "label": "Onion Rings",
+            "price": 0.5,
+            "preSelected": true
+          },
+            {
+              "addOnId": 2,
+              "label": "French Fries",
+              "price": 0.5,
+              "preSelected": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+
+}
